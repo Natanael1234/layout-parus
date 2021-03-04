@@ -26,5 +26,9 @@
     @include lg() {
       margin-bottom: 80px;      
     }
+
+    &.ver-mais-mail {
+      width: 384px;
+    }
   }
 }

@@ -32,8 +32,8 @@ export default class GalleryGrid extends React.Component {
           <div className="button-mais-produtos-container">
             <button
               type="button"
-              className="button-mais-produtos button font font_20">
-              Ainda mais produtos aqui!
+              className={'button-mais-produtos button font font_20' + (this.props.mail ? ' ver-mais-mail' : '')}>
+              { !this.props.mail  ? 'Ainda mais produtos aqui!' : 'Tem muito mais aqui! Vem ver!' }
             </button>
           </div>
         </span>
@@ -42,7 +42,7 @@ export default class GalleryGrid extends React.Component {
   }
 
   componentDidMount() {
-    this.requestDummyData(8).then(
+    this.requestDummyData(!this.props.mail ? 8 : 2).then(
       (items) => this.setState({ isLoaded: true, items }),
       (error) => this.setState({ isLoaded: true, error })
     );
