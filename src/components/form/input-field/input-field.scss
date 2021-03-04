@@ -1,0 +1,12 @@
+@import "../../../theme/variables.scss";
+
+.input-field {
+  input {
+    margin-bottom: 6px;
+    border: 2px solid $gray2;
+    border-radius: 4px;
+    color: $gray2;
+    width: calc(100% - 8px);
+    height: 36px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../../theme/variables.scss";
+
+.gallery-grid {
+  padding-left: 12px;
+  padding-right: 12px;
+  display: grid;
+  gap: 35px;
+  row-gap: 39px;
+  grid-template-columns: auto;
+  @include lg(){
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+.button-mais-produtos-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  .button-mais-produtos {
+    justify-self: center;
+    margin-top: 51px;    
+    width: 260px;
+    margin-bottom: 40px;    
+    @include lg() {
+      margin-bottom: 80px;      
+    }
+  }
+}

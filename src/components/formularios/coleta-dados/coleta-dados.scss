@@ -1,0 +1,16 @@
+@import "../../../theme/variables.scss";
+.coleta-dados {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 0 30px 0;
+  grid-gap: 40px !important;
+  gap: 40px !important;
+  column-gap: 65px !important;
+
+  // desktop descrição 517px gap 65px formulario 340px  
+
+  @include lg(){
+    grid-template-columns: 56% 1fr;
+  }
+}

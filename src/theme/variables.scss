@@ -1,0 +1,31 @@
+$desktop: 1500px;
+$intermediary: 600px;
+$mobile: 420px;
+
+@mixin lg() {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin sm() {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mail() {
+  @media (min-width: $intermediary) {
+    @content;
+  }
+}
+
+$white: #ffffff;
+$gray1: #d6d6d6;
+$gray2: #888888;
+$gray3: #707070;
+
+$font-color: #888;
+$font-color-light: $white;
+
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

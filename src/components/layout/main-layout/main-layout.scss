@@ -1,0 +1,35 @@
+@import "../../../theme/variables.scss";
+
+.main-layout {
+  width: 100%;
+
+  display: grid;
+
+  
+
+  grid-template-columns: 8px auto 8px;
+
+  @media (min-width: $mobile) {
+    grid-template-columns: auto 420px auto;
+  }
+
+  @include lg() {
+    grid-template-columns: auto 926px auto;
+  }
+
+  .header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+   
+  }
+
+  .footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+}

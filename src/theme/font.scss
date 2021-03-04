@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.font {
+  font-size: 12px;
+  color: $gray2;
+  &.font_bold {
+    font-weight: bold;
+  }
+  &.light {
+    color: $white;
+  }
+  &.font_12 {    
+    font-size: 12px;
+  }
+  &.font_14 {
+    font-size: 14px;
+  }
+  &.font_16 {
+    font-size: 16px;
+  }
+  &.font_18 {
+    font-size: 18px;
+  }
+  &.font_20 {
+    font-size: 20px;
+  }
+  &.font_40 {
+    font-size: 40px;
+  }
+}
+
+

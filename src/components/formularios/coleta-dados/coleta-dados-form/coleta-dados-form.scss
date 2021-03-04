@@ -1,0 +1,10 @@
+@import ".././../../../theme/variables.scss";
+
+.coleta-dados-form {
+  padding-left: 12px;
+  padding-right: 12px;
+  @include lg(){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

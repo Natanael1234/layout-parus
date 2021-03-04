@@ -1,0 +1,27 @@
+@import "../../../theme/variables.scss";
+
+.radio-group {  
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  height: 36px;
+  align-items: center;
+  .radio-option {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px 0 0;
+    align-items: center;
+    .radio-input {
+      background-color: $gray2;
+      margin-left: 0;
+    }
+    .radio-label {      
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
